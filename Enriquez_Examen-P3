@@ -58,10 +58,15 @@ int main() {
         for (int i = 0; i < 3; i++) {
         fprintf(archivo, "%d %s %s %s %.2f\n", alumnos[i].matricula, alumnos[i].nombre,
                 alumnos[i].direccion, alumnos[i].materia, alumnos[i].nota);
+
+        fclose(archivo);
               
             break;
 
         case 2:
+
+        printf("Impresion de datos desde el documento \n");
+        
             
             break;
         
