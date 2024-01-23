@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 
-    struct alumno
+#define MAX_ALUMNOS 9999
+
+    struct Alumno
     {
         int matricula;
         char nombre [50];
@@ -11,13 +13,14 @@
     };
 
 int main() {
-    
+
     int opcion;
+    struct Alumno alumnos[MAX_ALUMNOS];
 
     printf("---ALUMNOS UDLA---\n");
     do
     {
-        printf("1. Ingresar datos de alumno\n");
+        printf("\n1. Ingresar datos de alumno\n");
         printf("2. Revisar datos de alumnos\n");
         printf("3. Salir\n");
         scanf("%d", &opcion);
@@ -25,6 +28,35 @@ int main() {
         switch (opcion)
         {
         case 1:
+
+        int respuesta;
+
+        do
+        {
+            for (int i = 0; i <= MAX_ALUMNOS || respuesta==2; i++)
+            {
+
+            printf("\nMatricula: ");
+            scanf("%d", &alumnos[i].matricula);
+            printf("\nNombre y apellido: ");
+            scanf("%c", &alumnos[i].nombre);
+            printf("\nDireccion de domicilio: ");
+            scanf("%c", &alumnos[i].direccion);
+            printf("\nMateria: ");
+            scanf("%c", &alumnos[i].materia);
+            printf("\nPromedio: ");
+            scanf("%f", &alumnos[i].nota);
+
+            }
+
+
+        } while (respuesta==1);
+        
+
+
+            break;
+
+        case 2:
             
             break;
         
