@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
     struct alumno
     {
         int matricula;
@@ -10,7 +9,30 @@ int main() {
         char materia [50];
         float nota;
     };
+
+int main() {
     
+    int opcion;
+
+    printf("---ALUMNOS UDLA---\n");
+    do
+    {
+        printf("1. Ingresar datos de alumno\n");
+        printf("2. Revisar datos de alumnos\n");
+        printf("3. Salir\n");
+        scanf("%d", &opcion);
+
+        switch (opcion)
+        {
+        case 1:
+            
+            break;
+        
+        default:
+            break;
+        }
+
+    } while (opcion!=3);
 
     return 0;
     
